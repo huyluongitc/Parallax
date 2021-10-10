@@ -1,0 +1,624 @@
+.editor {
+  border: "1px solid gray";
+  min-height: "6em";
+}
+/* myHome */
+.myHome {
+  display: flex;
+}
+.myHome__menu {
+  flex: 1.2;
+}
+.myHome__info {
+  flex: 2;
+}
+.myHome__li {
+  font-size: 16px;
+  color: rgb(100, 100, 100);
+}
+.myHome__li :hover {
+  color: black;
+}
+.Myhome__icon {
+  color: var(--primary-color);
+}
+/* myHome */
+
+/* address */
+.myHome__address {
+  width: 100%;
+  display: flex;
+}
+.myHome__address--info {
+  width: 90%;
+  word-wrap: break-word;
+  font-size: 20px;
+}
+.myHome__address--info :hover {
+  background-color: #78789b;
+  padding-left: 10px;
+  color: white;
+  border-radius: 5px;
+}
+.myHome__address--btn {
+  flex: 1;
+  text-align: right;
+  cursor: pointer;
+}
+.myHome__address--icon {
+  font-size: 18px;
+  margin-left: 5px;
+}
+/* address */
+
+/* List Product */
+.admin__option {
+  display: flex;
+  justify-content: space-between;
+}
+.admin__btn {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
+}
+.admin__btn:hover {
+  color: var(--primary-color);
+  opacity: 0.7;
+}
+.admin__body {
+  display: flex;
+  margin-top: 10px;
+}
+.admin__table {
+  flex: 1.5;
+}
+.admin__form {
+  margin-left: 10px;
+  flex: 1;
+  display: none;
+}
+.admin__img {
+  height: 100px;
+}
+.admin__icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+/* List product */
+
+/* danh mục */
+.homedanhmuc{
+  border-radius: 2px;
+  background-color: #f8f9fa !important;
+}
+.homedanhchoban{
+  position: relative;
+  margin-top: 15px;
+  margin-right: -10px;
+  left: 10px;
+}
+.danhmuc {
+  margin-top: 1%;
+  width: 100%;
+}
+.danhmuc li {
+  display: inline-block;
+  width: 12.5%;
+  text-align: center;
+}
+.danhmuc .card {
+  background-color: #f8f9fa !important;
+  height: 160px;
+  width: auto;
+  position: relative;
+}
+
+.danhmuc .card__img {
+  height: 133.86px;
+}
+.danhmuc .card__img .img__product {
+  height: 123.86px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
+.danhmuc .card__text {
+  height: auto;
+}
+.danhmuc .card__text .text__product {
+  height: 8%;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.danhchoban {
+  padding: 0px;
+  margin-top: 0.5%;
+  width: 100%;
+  position: relative;
+}
+.danhchoban li {
+  display: inline-block;
+  width: 20%;
+  padding: 5px;
+}
+.danhchoban .card {
+  background-color: #f8f9fa !important;
+  min-height: auto;
+  width: auto;
+  position: relative;
+  display: flex;
+  transition: .1s ease-out;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.danhchoban .card:hover{
+  transform: translateY(-2.5px);
+}
+.danhchoban .card:hover::before{
+  opacity: 1;
+}
+
+.danhchoban .card__img {
+  min-height: 100%;
+}
+.danhchoban .card__img .img__product {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.danhchoban .card__text {
+  height: auto;
+}
+.danhchoban .card__text .text__product {
+  height: 8%;
+  font-weight: 600;
+  font-size: 15px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  padding: 5px 5px 0px;
+}
+.danhchoban .card__text .text__priceup {
+  color: #f57224;
+  font-size: 15px;
+  padding: 0 5px;
+}
+.danhchoban .card__text .text__pricedown {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.danhchoban .card__text .text__price-cost{
+  color: #a5a5a5;
+  text-decoration: line-through;
+}
+.danhchoban .card__text .text__vnd{
+  color: #a5a5a5;
+  text-decoration: line-through;
+}
+
+.danhchoban .card__text .sold{
+  position: relative;
+  color: #a5a5a5;
+  margin-top: -17px;
+  padding: 0 5px;
+}
+/* danh mục */
+
+/* Shop */
+.shop__body {
+  margin: 10px auto;
+}
+.shop__ul {
+  justify-content: space-around;
+}
+.shop__li {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px;
+}
+.shop__li:hover {
+  opacity: 0.6;
+}
+.shop__text {
+  color: #333;
+}
+/* intrduct */
+.introduce__left {
+  flex: 2;
+}
+.introduce__right {
+  flex: 1;
+}
+/* product */
+#proDetail,
+#proClassify {
+  display: block;
+}
+.pro {
+  display: flex;
+  margin-top: 5px;
+}
+.pro + .pro {
+  margin-bottom: 5px;
+}
+.pro__left {
+  flex: 1;
+}
+.pro__left--input {
+  flex: 1;
+}
+.pro__left--btn {
+  margin-right: 5px;
+}
+.pro__right {
+  flex: 2;
+  margin-left: 10px;
+}
+.pro__classify {
+  align-items: center;
+  display: flex;
+}
+.flHover:hover {
+  background-color: grey;
+  color: white;
+}
+/* Shop */
+
+/* detail */
+.detail {
+  display: flex;
+  width: 100%;
+}
+.detail__imgSrc {
+  flex: 1.5;
+}
+.detail__infomation {
+  flex: 2;
+}
+.detail__img {
+  width: 300px;
+  height: 300px;
+}
+.detail__img--tab {
+  width: 100px;
+  height: 100px;
+}
+.description {
+  margin-top: 20px;
+}
+.evaluate {
+  border: 1px solid black;
+  margin-top: 10px;
+  height: 500px;
+  width: 100%;
+  overflow: scroll;
+  padding: 10px;
+}
+.vote {
+  margin: 10px;
+}
+.btn__vote {
+  font-size: 18px;
+}
+.form__vote {
+  border: 1px solid black;
+  padding: 10px;
+}
+.reivews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(223, 217, 217);
+  margin-bottom: 10px;
+}
+.reivew {
+  flex: 1;
+  display: flex;
+}
+.content:hover {
+  background-color: rgb(230, 225, 225);
+}
+/* detail */
+
+/* cart */
+.cart__display {
+  display: flex;
+}
+.cart__img {
+  width: 100px;
+  height: 100px;
+}
+
+/* cart */
+
+/* list */
+.list {
+  display: flex;
+}
+.list__aside {
+  flex: 1;
+  background-color: white;
+  box-shadow: 1px 5px 10px 2px #f7f7f7;
+  border-radius: 10px;
+  padding: 10px;
+}
+.list__article {
+  flex: 3;
+  background-color: white;
+  box-shadow: 1px 5px 10px 2px #f7f7f7;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 5px;
+}
+.list__li {
+  list-style-type: none;
+  padding: 5px;
+  box-shadow: 0px 0px 5px 2px #f7f7f7;
+  cursor: pointer;
+}
+.list__li + .list__li {
+  margin-bottom: 5px;
+}
+.list__li:hover {
+  background-color: aliceblue;
+}
+.list__SX {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px #ddd4d4;
+  padding: 5px;
+}
+.list__SP {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list__product {
+  margin: 10px;
+  width: calc(25% - 20px);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px #ddd4d4;
+}
+.list__product:hover {
+  transform: translateY(-2.5px)
+}
+.list__product--img {
+  height: 150px;
+}
+.list__product--text {
+  height: 70px;
+  padding: 5px;
+}
+.list__img {
+  width: 100%;
+  height: 150px;
+  border-radius: 0 0 10px 10px;
+}
+.list__text {
+  font-size: 10px;
+  margin: 0px;
+}
+.list__text--title {
+  font-size: 18px;
+  margin: 0px;
+}
+.list__text--price {
+  font-size: 14px;
+  margin: 0px;
+}
+/* list */
+
+/* tablet */
+@media (max-width: 991.5px) {
+  /* myHome */
+  .myHome__li {
+    font-size: 14px;
+  }
+
+  /* address */
+  .myHome__address--info {
+    font-size: 18px;
+  }
+
+  /* List Product */
+  .admin__btn {
+    font-size: 18px;
+  }
+  .admin__img {
+    height: 80px;
+  }
+  .admin__icon {
+    font-size: 20px;
+  }
+
+  /* danh mục */
+  .danhmuc {
+    display: flex;
+    overflow-x: auto;
+  }
+  .danhmuc::-webkit-scrollbar {
+    width: 0;
+  }
+  .danhmuc li {
+    margin-right: 5px;
+  }
+  .danhmuc .card {
+    height: 110px;
+    width: 80px;
+  }
+  .danhmuc .card__img {
+    height: auto;
+  }
+  .danhmuc .card__img .img__product {
+    height: auto;
+    width: 100%;
+    margin-bottom: 5px;
+    padding-top: 0;
+  }
+  .danhmuc .card__text .text__product {
+    font-size: 8px;
+  }
+  .danhchoban {
+    margin-top: 1%;
+  }
+
+  /* myShop */
+  .shop__li {
+    font-size: 20px;
+  }
+
+  /* detail */
+  .detail__img {
+    width: 240px;
+    height: 240px;
+  }
+  .detail__img--tab {
+    width: 80px;
+    height: 80px;
+  }
+}
+/* tablet */
+
+/* phone */
+@media (max-width: 767.5px) {
+  /* myHome */
+  .myHome__li {
+    font-size: 12px;
+  }
+
+  /* address */
+  .myHome__address--info {
+    font-size: 16px;
+  }
+
+  /* List Product */
+  .admin__body {
+    flex-direction: column-reverse;
+  }
+  .admin__btn {
+    font-size: 16px;
+  }
+  .admin__img {
+    height: 60px;
+  }
+  .admin__icon {
+    font-size: 18px;
+  }
+  .admin__form {
+    margin-bottom: 10px;
+  }
+
+  /* danh mục */
+  .danhmuc {
+    display: flex;
+    overflow-x: auto;
+  }
+  .danhmuc::-webkit-scrollbar {
+    width: 0;
+  }
+  .danhmuc li {
+    margin-right: 5px;
+  }
+  .danhmuc .card {
+    height: 70px;
+    width: 55px;
+  }
+  .danhmuc .card__img {
+    height: auto;
+  }
+  .danhmuc .card__img .img__product {
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-top: 0;
+  }
+  .danhmuc .card__text .text__product {
+    font-size: 6px;
+  }
+  .homedanhchoban{
+    margin-top: 0px;
+  }  
+  .danhchoban {
+    margin-top: 1%;
+  }
+  .danhchoban li {
+    width: 33.33%;
+  }
+  .danhchoban .card__text .text__priceup {
+    font-size: 13px;
+  }
+  .danhchoban .card__text .text__pricedown {
+    font-size: 9px;
+  }
+  
+  .danhchoban .card__text .sold{
+    margin-top: -15px;
+    padding: 0 5px;
+    font-size: 9px;
+  }
+
+  /* myShop */
+  .shop__li {
+    font-size: 16px;
+  }
+
+  /* detail */
+  .detail__img {
+    width: 100%;
+    height: 300px;
+  }
+  .detail__img--tab {
+    width: 100%;
+    height: 80px;
+  }
+  .detail {
+    display: block;
+  }
+  .detail__infomation {
+    margin-top: 20px;
+  }
+  .respon {
+    justify-content: center;
+  }
+}
+/* phone */
+
+@media (max-width: 480.5px) {
+  .homedanhchoban{
+    margin-top: 0%;
+  }
+  .title-danhchoban{
+    padding-top: 10px;
+    font-size: 12px;
+    margin-left: -8%;
+  }
+  
+  .danhchoban {
+    margin-top: 1%;
+  }
+  .danhchoban li {
+    width: 33.33%;
+  }
+  .danhchoban .card__text {
+    margin-top: -8px;
+  }
+  .danhchoban .card__text .text__product {
+    font-size: 12px;
+  }
+  .danhchoban .card__text .text__priceup {
+    font-size: 12px;
+  }
+  .danhchoban .card__text .text__pricedown {
+    font-size: 8px;
+  }
+  
+  .danhchoban .card__text .sold{
+    font-size: 7px;
+    margin-top: -13px;
+    padding: 0 5px;
+  }
+}
